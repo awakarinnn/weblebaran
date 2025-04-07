@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momen Lebaran Hari 1 - 7</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f8372, #cdece6);
+      color: white;
+      transition: background 0.5s ease-in-out;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top-nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: white;
+      color: #0f8372;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #eafff7;
+      color: #005c4f;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item h2 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .slide-container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slide-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px 14px;
+      color: white;
+      font-weight: bold;
+      font-size: 22px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      user-select: none;
+      z-index: 2;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .prev:hover, .next:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .gallery-caption {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #0f5c48; 
+    }
+
+    @media (max-width: 600px) {
+      .slide-img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-nav">
+      <a class="back-button" href="index.html">← Kembali ke Halaman Utama</a>
+    </div>
+
+    <h1>Momen Lebaran Bersama Keluarga</h1>
+
+    <div class="gallery-grid">
+      <!-- Hari 1 -->
+      <div class="gallery-item">
+        <h2>Hari 1</h2>
+        <div class="slide-container">
+          <div class="mySlides slide1"><img class="slide-img" src="solatid.jpg" alt="Solat Idul Fitri"></div>
+          <div class="mySlides slide1"><img class="slide-img" src="sid2.jpg"></div>
+          <div class="mySlides slide1"><img class="slide-img" src="sid3.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+          <a class="next" onclick="plusSlides(1, 0)">❯</a>
+        </div>
+        <div class="gallery-caption">Solat Idul Fitri di Pekanbaru bersama keluarga</div>
+      </div>
+
+      <!-- Hari 2 -->
+      <div class="gallery-item">
+        <h2>Hari 2</h2>
+        <div class="slide-container">
+          <div class="mySlides slide2"><img class="slide-img" src="puncaklawang.jpg"></div>
+          <div class="mySlides slide2"><img class="slide-img" src="pc2.jpg"></div>
+          <div class="mySlides slide2"><img class="slide-img" src="pc3.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+          <a class="next" onclick="plusSlides(1, 1)">❯</a>
+        </div>
+        <div class="gallery-caption">Mengunjungi puncak lawang dan menikmati pemandangan bersama keluarga</div>
+      </div>
+
+      <!-- Hari 3 -->
+      <div class="gallery-item">
+        <h2>Hari 3</h2>
+        <div class="slide-container">
+          <div class="mySlides slide3"><img class="slide-img" src="maninjau.jpg"></div>
+          <div class="mySlides slide3"><img class="slide-img" src="mnj2.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+          <a class="next" onclick="plusSlides(1, 2)">❯</a>
+        </div>
+        <div class="gallery-caption">Pulang kampung untuk bersilaturahmi dengan nenek di maninjau</div>
+      </div>
+
+      <!-- Hari 4 -->
+      <div class="gallery-item">
+        <h2>Hari 4</h2>
+        <div class="slide-container">
+          <div class="mySlides slide4"><img class="slide-img" src="bkt1.jpg"></div>
+          <div class="mySlides slide4"><img class="slide-img" src="bkt2.jpg"></div>
+          <div class="mySlides slide4"><img class="slide-img" src="bkt3.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+          <a class="next" onclick="plusSlides(1, 3)">❯</a>
+        </div>
+        <div class="gallery-caption">Menikmati durian dan membeli oleh oleh di bukittingi</div>
+      </div>
+
+      <!-- Hari 5 -->
+      <div class="gallery-item">
+        <h2>Hari 5</h2>
+        <div class="slide-container">
+          <div class="mySlides slide5"><img class="slide-img" src="pantai.jpg"></div>
+          <div class="mySlides slide5"><img class="slide-img" src="pantai2.jpg"></div>
+          <div class="mySlides slide5"><img class="slide-img" src="pantai3.jpg"></div>
+          <div class="mySlides slide5"><img class="slide-img" src="pantai4.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 4)">❮</a>
+          <a class="next" onclick="plusSlides(1, 4)">❯</a>
+        </div>
+        <div class="gallery-caption">Mengunjungi dan menikmati kuliner di pantai pariaman</div>
+      </div>
+
+      <!-- Hari 6 -->
+      <div class="gallery-item">
+        <h2>Hari 6</h2>
+        <div class="slide-container">
+          <div class="mySlides slide6"><img class="slide-img" src="pdg.jpg"></div>
+          <div class="mySlides slide6"><img class="slide-img" src="pdg1.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 5)">❮</a>
+          <a class="next" onclick="plusSlides(1, 5)">❯</a>
+        </div>
+        <div class="gallery-caption">Bersilaturahmi ke rumah saudara di padang melawati tol cincin</div>
+      </div>
+
+      <!-- Hari 7 -->
+      <div class="gallery-item">
+        <h2>Hari 7</h2>
+        <div class="slide-container">
+          <div class="mySlides slide7"><img class="slide-img" src="kelok9.jpg"></div>
+          <a class="prev" onclick="plusSlides(-1, 6)">❮</a>
+          <a class="next" onclick="plusSlides(1, 6)">❯</a>
+        </div>
+        <div class="gallery-caption">Jalur di kelok 9 tampak ramai lancar ketika arus balik ke duri</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slideIndices = [1, 1, 1, 1, 1, 1, 1];
+    const slideClassNames = ["slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7"];
+
+    function showSlides(n, no) {
+      let slides = document.getElementsByClassName(slideClassNames[no]);
+      if (n > slides.length) {slideIndices[no] = 1}
+      if (n < 1) {slideIndices[no] = slides.length}
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      if (slides.length > 0) {
+        slides[slideIndices[no] - 1].style.display = "block";
+      }
+    }
+
+    function plusSlides(n, no) {
+      showSlides(slideIndices[no] += n, no);
+    }
+
+    for (let i = 0; i < slideClassNames.length; i++) {
+      showSlides(1, i);
+    }
+  </script>
+</body>
+</html>
